@@ -1,0 +1,84 @@
+<%- include('partials/head', { title: 'Contact' }) %>
+<%- include('partials/nav', { page: 'contact' }) %>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="padding-bottom:48px">
+  <div class="hero-inner">
+    <div class="hero-badge"><span class="badge-dot"></span> GET IN TOUCH</div>
+    <h1 class="hero-title">Let's Talk<br /><em>Hiring</em></h1>
+    <p class="hero-sub">Whether you want a demo, have a question, or are ready to get started — we're here.</p>
+  </div>
+</section>
+
+<!-- CONTACT BODY -->
+<section class="contact-page">
+  <div class="section-inner contact-page-grid">
+
+    <!-- FORM -->
+    <div class="contact-form-wrap">
+      <h2>Send us a message</h2>
+      <p>We typically respond within one business day.</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Alex Johnson" required />
+          </div>
+          <div class="form-group">
+            <label>Work Email</label>
+            <input type="email" placeholder="alex@company.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Company</label>
+          <input type="text" placeholder="Acme Corp" />
+        </div>
+        <div class="form-group">
+          <label>What can we help you with?</label>
+          <select>
+            <option value="">Select a topic</option>
+            <option>Book a demo</option>
+            <option>Sales inquiry</option>
+            <option>Technical support</option>
+            <option>Partnership</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Tell us about your hiring challenges..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message →</button>
+        <p class="form-note" id="formSuccess" style="display:none;color:#22C55E;font-weight:600;margin-top:12px">✓ Message sent! We'll be in touch shortly.</p>
+      </form>
+    </div>
+
+    <!-- SIDE INFO -->
+    <div class="contact-info">
+      <div class="contact-info-card">
+        <h3>Book a Demo</h3>
+        <p>See the platform live with one of our product specialists. 30 minutes, no commitment.</p>
+        <a href="#" class="btn-primary" style="display:inline-block;margin-top:12px">Schedule Now →</a>
+      </div>
+
+      <div class="contact-info-card">
+        <h3>Contact Details</h3>
+        <ul class="contact-details">
+          <li><span>📧</span> hello@anytimehire.com</li>
+          <li><span>📞</span> +1 (555) 012-3456</li>
+          <li><span>📍</span> 123 Market St, San Francisco, CA</li>
+          <li><span>🕐</span> Mon–Fri, 9am–6pm PST</li>
+        </ul>
+      </div>
+
+      <div class="contact-info-card">
+        <h3>Enterprise Sales</h3>
+        <p>Looking for a custom plan or have a complex use case? Our enterprise team is ready.</p>
+        <a href="mailto:enterprise@anytimehire.com" class="btn-secondary" style="display:inline-block;margin-top:12px">enterprise@anytimehire.com</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<%- include('partials/footer') %>
