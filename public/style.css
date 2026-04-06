@@ -1472,6 +1472,55 @@ img {
   font-size: 0.82rem;
   color: rgba(255, 255, 255, 0.4);
 }
+.footer {
+  background: #0f172a;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 60px 20px 20px;
+}
+
+/* 4 equal cards */
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* each card */
+.footer-card h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-card a {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.footer-card a:hover {
+  color: #fff;
+}
+
+/* logo */
+.logo-img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+}
 
 /* ============================================
    RESPONSIVE — TABLET (< 1024px)
