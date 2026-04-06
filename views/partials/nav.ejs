@@ -1,18 +1,34 @@
 <nav class="navbar">
   <div class="nav-inner">
     <a href="/" class="logo">
-      <span class="logo-icon">A</span>
-      <span class="logo-text">AnytimeHire</span>
-    </a>
+      <img
+        src="/images/original-anytime-hire-logo.jpg.jpeg"
+        alt="AnytimeHire Logo"
+        class="logo-img"
+    /></a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="/"          class="<%= page==='home'     ? 'active':'' %>">Home</a></li>
-      <li><a href="/platform"  class="<%= page==='platform' ? 'active':'' %>">Platform</a></li>
-      <li><a href="/pricing"   class="<%= page==='pricing'  ? 'active':'' %>">Pricing</a></li>
-      <li><a href="/about"     class="<%= page==='about'    ? 'active':'' %>">About</a></li>
-      <li><a href="/contact"   class="<%= page==='contact'  ? 'active':'' %>">Contact</a></li>
+      <li><a href="/" class="<%= page==='home' ? 'active':'' %>">Home</a></li>
+      <li>
+        <a href="/platform" class="<%= page==='platform' ? 'active':'' %>"
+          >Platform</a
+        >
+      </li>
+      <li>
+        <a href="/pricing" class="<%= page==='pricing' ? 'active':'' %>"
+          >Pricing</a
+        >
+      </li>
+      <li>
+        <a href="/about" class="<%= page==='about' ? 'active':'' %>">About</a>
+      </li>
+      <li>
+        <a href="/contact" class="<%= page==='contact' ? 'active':'' %>"
+          >Contact</a
+        >
+      </li>
     </ul>
     <a href="/contact" class="btn-demo">Get a Demo</a>
   </div>
