@@ -845,23 +845,103 @@ img {
 }
 
 /* ============================================
-   COMPARISON TABLE (home version)
+   HEAD-TO-HEAD COMPARISON
    ============================================ */
-.home-compare thead th.col-us {
-  background: var(--blue);
+.h2h {
+  padding: 80px 0;
+  background: #fff;
 }
-.home-compare td.col-us {
-  background: #e4f5f5;
+.h2h-tag {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+  margin-bottom: 12px;
+}
+.h2h-headline {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+.h2h-divider {
+  border: none;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue-dark) 0%, var(--blue) 100%);
+  margin-bottom: 48px;
+}
+
+.h2h-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+.h2h-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.h2h-table th,
+.h2h-table td {
+  padding: 16px 20px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  white-space: nowrap;
+}
+.h2h-table th:first-child,
+.h2h-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+}
+.h2h-table thead th {
+  background: #f9fafb;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+}
+.h2h-table thead th.col-us {
+  background: var(--blue-dark);
+  color: #fff;
+  border-radius: 0;
+}
+.h2h-table thead th:first-child {
+  border-top-left-radius: 12px;
+}
+.h2h-table thead th:last-child {
+  border-top-right-radius: 12px;
+}
+.h2h-table td.col-us {
+  font-weight: 600;
+}
+.h2h-table td.good {
+  color: #059669;
+  font-weight: 600;
+}
+.h2h-table td.bad {
+  color: #dc2626;
   font-weight: 500;
 }
-.home-compare td.good {
-  color: #16a34a;
+.h2h-table td.neutral {
+  color: #6b7280;
 }
-.home-compare td.bad {
-  color: #dc2626;
+.h2h-table tbody tr:last-child td {
+  border-bottom: none;
 }
-.home-compare td.neutral {
-  color: var(--body-text);
+
+.h2h-note {
+  margin-top: 32px;
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+  border-radius: 10px;
+  padding: 20px 28px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.7;
 }
 
 /* ============================================
