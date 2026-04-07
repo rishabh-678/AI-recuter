@@ -271,7 +271,7 @@ img {
    HERO
    ============================================ */
 .hero {
-  background: #0d3e47;
+  background: #061b1f;
   padding: 80px 0 0;
   text-align: center;
   overflow: hidden;
@@ -361,7 +361,8 @@ img {
 }
 .hero-trust span {
   font-size: 0.82rem;
-  color: var(--body-text);
+  /* color: var(--body-text); */
+  color: #fff;
 }
 
 /* ── Dashboard Mockup ── */
