@@ -1145,93 +1145,157 @@ img {
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 28px;
   align-items: start;
 }
 
 .price-card {
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 36px 32px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 16px;
+  padding: 40px 32px;
   text-align: left;
   position: relative;
-  transition: box-shadow var(--transition);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
 }
 .price-card:hover {
-  box-shadow: var(--shadow);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
 }
 
+/* Featured / dark card */
 .price-card.featured {
-  border-color: var(--blue);
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-8px);
+  background: #0f2b30;
+  border-color: #0f2b30;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .popular-badge {
   position: absolute;
-  top: -14px;
+  top: -16px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--blue);
   color: #fff;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  padding: 4px 14px;
+  letter-spacing: 0.12em;
+  padding: 6px 22px;
   border-radius: 999px;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
-.price-card h3 {
-  font-size: 1.1rem;
+/* Plan label */
+.plan-label {
+  font-size: 0.82rem;
   font-weight: 700;
-  margin-bottom: 12px;
-  color: var(--navy);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--blue-dark);
+  margin-bottom: 16px;
+}
+.price-card.featured .plan-label {
+  color: var(--blue);
 }
 
+/* Price */
 .price {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2.8rem;
+  font-weight: 800;
   color: var(--navy);
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+  line-height: 1;
 }
-.price span {
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--body-text);
+.price-card.featured .price {
+  color: #fff;
 }
 
-.price-card ul {
+/* Price meta (per month · up to X roles) */
+.price-meta {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+.price-card.featured .price-meta {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Description */
+.price-desc {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.6;
   margin-bottom: 28px;
+}
+.price-card.featured .price-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Feature list */
+.price-card ul {
+  list-style: none;
+  margin-bottom: 32px;
+  flex-grow: 1;
 }
 .price-card li {
   font-size: 0.9rem;
-  color: var(--body-text);
-  padding: 7px 0;
-  border-bottom: 1px solid var(--border);
+  color: #374151;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-.price-card li:last-child {
-  border-bottom: none;
+.price-card.featured li {
+  color: rgba(255, 255, 255, 0.85);
 }
 
+/* Checkmark icons */
+.check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.check.green {
+  background: #d1fae5;
+  color: #059669;
+}
+.check.teal {
+  background: #0d4f56;
+  color: #2dd4bf;
+}
+
+/* Buttons */
 .btn-price {
   display: block;
   text-align: center;
-  background: var(--blue-light);
-  color: var(--blue);
-  padding: 12px 24px;
-  border-radius: var(--radius);
+  padding: 14px 24px;
+  border-radius: 10px;
   font-weight: 600;
-  font-size: 0.9rem;
-  border: 1.5px solid var(--blue);
-  transition:
-    background var(--transition),
-    color var(--transition);
+  font-size: 0.95rem;
+  border: 1.5px solid #d1d5db;
+  background: #fff;
+  color: var(--navy);
+  transition: all var(--transition);
+  margin-top: auto;
 }
-.btn-price:hover,
+.btn-price:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
 .price-card.featured .btn-price {
   background: var(--blue);
   color: #fff;
+  border-color: var(--blue);
+}
+.price-card.featured .btn-price:hover {
+  background: #1fa3a4;
 }
 
 /* ============================================
@@ -1891,9 +1955,6 @@ img {
   color: var(--body-text);
   margin-bottom: 20px;
   line-height: 1.6;
-}
-.price-card li.disabled {
-  color: #cbd5e1;
 }
 
 .comparison {
