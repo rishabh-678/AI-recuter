@@ -271,7 +271,7 @@ img {
    HERO
    ============================================ */
 .hero {
-  background: linear-gradient(160deg, #e4f5f5 0%, #edf8f8 55%, #f7fefe 100%);
+  background: #0d3e47;
   padding: 80px 0 0;
   text-align: center;
   overflow: hidden;
@@ -320,7 +320,8 @@ img {
 
 .hero-title {
   font-family: "Nunito Sans", sans-serif;
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  /* font-size: clamp(2.2rem, 5vw, 3.5rem); */
+  font-size: 55px;
   font-weight: 700;
   line-height: 1.15;
   color: var(--navy);
@@ -328,13 +329,16 @@ img {
 }
 
 .hero-title em {
-  font-style: italic;
+  font-style: normal;
   color: var(--blue);
+  font-weight: 900;
+  text-transform: capitalize;
 }
 
 .hero-sub {
   font-size: 1.05rem;
-  color: var(--body-text);
+  /* color: var(--body-text); */
+  color: #ccc;
   max-width: 580px;
   margin: 0 auto 40px;
   line-height: 1.75;
@@ -364,11 +368,11 @@ img {
   display: grid;
   grid-template-columns: 220px 1fr 220px;
   gap: 12px;
-  margin: 48px auto 0;
+  margin: 48px auto 40px;
   max-width: 860px;
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  border-radius: 10px;
   box-shadow: 0 -4px 40px rgba(17, 81, 93, 0.12);
   padding: 20px;
   text-align: left;
