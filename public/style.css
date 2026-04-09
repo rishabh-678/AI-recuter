@@ -601,7 +601,7 @@ img {
    HEAD-TO-HEAD COMPARISON
    ============================================ */
 .h2h {
-  padding: 20px 0;
+  padding: 40px 0;
   background: #fff;
 }
 .h2h-tag {
@@ -1149,7 +1149,7 @@ img {
 }
 
 .about-text .section-title {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .about-text p {
   font-size: 0.95rem;
