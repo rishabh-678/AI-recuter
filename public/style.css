@@ -963,7 +963,7 @@ img {
   text-align: left;
 }
 .testi-card {
-  background: var(--light-bg);
+  background: #0d3e47;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 28px;
@@ -977,7 +977,7 @@ img {
 }
 .testi-card > p {
   font-size: 0.9rem;
-  color: var(--navy);
+  color: #fff;
   line-height: 1.75;
   font-style: italic;
   flex: 1;
@@ -1008,11 +1008,11 @@ img {
 .testi-author strong {
   display: block;
   font-size: 0.88rem;
-  color: var(--navy);
+  color: #fff;
 }
 .testi-author span {
   font-size: 0.78rem;
-  color: var(--body-text);
+  color: #fff;
 }
 
 /* ============================================
@@ -1020,7 +1020,7 @@ img {
    ============================================ */
 .numbers {
   padding: 72px 0;
-  background: var(--light-bg);
+  background: #0d3e47;
 }
 .numbers-title {
   font-family: "Nunito Sans", sans-serif;
