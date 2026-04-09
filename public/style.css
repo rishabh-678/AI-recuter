@@ -74,14 +74,14 @@ img {
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.12em;
-  color: var(--blue);
+  color: #fff;
   margin-bottom: 12px;
 }
 
 .section-title {
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 700;
-  color: var(--navy);
+  color: #fff;
   line-height: 1.2;
   margin-bottom: 48px;
 }
@@ -1480,7 +1480,7 @@ img {
    CTA BANNER
    ============================================ */
 .cta-banner {
-  background: linear-gradient(135deg, var(--blue) 0%, #11515d 100%);
+  background: #0d3e47;
   padding: 80px 0;
   text-align: center;
   color: var(--white);
@@ -1787,7 +1787,7 @@ img {
    PAGE HERO (inner pages)
    ============================================ */
 .page-hero {
-  background: linear-gradient(160deg, #e4f5f5 0%, #edf8f8 55%, #f7fefe 100%);
+  background: #0d3e47;
   padding: 80px 0 72px;
   text-align: center;
 }
@@ -2035,7 +2035,7 @@ img {
 /* Integrations */
 .integrations {
   padding: 80px 0;
-  background: var(--light-bg);
+  background: #0d3e47;
 }
 .integration-logos {
   display: flex;
