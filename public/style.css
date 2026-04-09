@@ -1402,7 +1402,7 @@ img {
 }
 .about-text p {
   font-size: 0.95rem;
-  color: var(--body-text);
+  color: #ccc;
   margin-bottom: 16px;
   line-height: 1.75;
 }
@@ -2170,7 +2170,7 @@ img {
    ============================================ */
 .about-mission {
   padding: 80px 0;
-  background: var(--light-bg);
+  background: #0d3e47;
 }
 
 .values {
@@ -2180,7 +2180,7 @@ img {
 
 .team {
   padding: 80px 0;
-  background: var(--light-bg);
+  background: #0d3e47;
 }
 .team-grid {
   display: grid;
@@ -2300,7 +2300,8 @@ img {
   gap: 20px;
 }
 .contact-info-card {
-  background: var(--light-bg);
+  background: #0d3e47;
+
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 28px;
@@ -2313,7 +2314,7 @@ img {
 }
 .contact-info-card p {
   font-size: 0.88rem;
-  color: var(--body-text);
+  color: #ccc;
   line-height: 1.65;
 }
 .contact-details {
@@ -2327,7 +2328,7 @@ img {
   align-items: center;
   gap: 10px;
   font-size: 0.88rem;
-  color: var(--body-text);
+  color: #ccc;
 }
 .contact-details li span {
   font-size: 1rem;
